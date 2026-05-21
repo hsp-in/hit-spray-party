@@ -128,3 +128,185 @@ button:hover {
 
 </body>
 </html>
+<!-- NEW PROMISE SECTION START -->
+
+<style>
+#new-promise {
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  color: white;
+  padding: 80px 20px;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.promise-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.promise-title {
+  font-size: 48px;
+  color: #ff3b3b;
+  margin-bottom: 15px;
+  animation: fadeDown 1s ease;
+}
+
+.promise-subtitle {
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 50px;
+  animation: fadeUp 1.2s ease;
+}
+
+.promise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.promise-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 30px 20px;
+  border-radius: 20px;
+  transition: 0.4s ease;
+  backdrop-filter: blur(8px);
+  animation: zoomIn 1s ease;
+}
+
+.promise-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 25px rgba(255, 59, 59, 0.4);
+}
+
+.promise-card h2 {
+  color: #ff4d4d;
+  margin-bottom: 15px;
+}
+
+.promise-card p {
+  color: #bbb;
+  line-height: 1.7;
+}
+
+.promise-btn {
+  display: inline-block;
+  margin-top: 50px;
+  background: #ff3b3b;
+  color: white;
+  padding: 16px 38px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+  animation: pulse 2s infinite;
+}
+
+.promise-btn:hover {
+  background: #ff1f1f;
+  transform: scale(1.05);
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 rgba(255,59,59,0.5);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255,59,59,0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(255,59,59,0.5);
+  }
+}
+</style>
+
+<section id="new-promise">
+  <div class="promise-container">
+
+    <h1 class="promise-title">
+      OUR NEW PROMISE
+    </h1>
+
+    <p class="promise-subtitle">
+      A movement for transparency, accountability, youth empowerment,
+      and people-first governance. Together we raise our voice for a stronger democracy.
+    </p>
+
+    <div class="promise-grid">
+
+      <div class="promise-card">
+        <h2>Transparent Governance</h2>
+        <p>
+          Every decision and public project should remain open and accountable to citizens.
+        </p>
+      </div>
+
+      <div class="promise-card">
+        <h2>Youth Empowerment</h2>
+        <p>
+          Better opportunities, skill development, and stronger support for young people.
+        </p>
+      </div>
+
+      <div class="promise-card">
+        <h2>People First</h2>
+        <p>
+          Policies must focus on jobs, education, safety, and the dignity of ordinary citizens.
+        </p>
+      </div>
+
+      <div class="promise-card">
+        <h2>Voice & Freedom</h2>
+        <p>
+          Every citizen deserves the right to question, participate, and be heard.
+        </p>
+      </div>
+
+    </div>
+
+    <a href="#join" class="promise-btn">
+      Join The Movement
+    </a>
+
+  </div>
+</section>
+
+<!-- NEW PROMISE SECTION END -->
